@@ -8,19 +8,16 @@
       <AssemblerScript>{ Game   : shapez 2
   Version: 
   Date   : 2025-02-09
-  Author : mvelv
-
-  This script does blah blah blah
+  Author : omativi
 }
 
 [ENABLE]
 
-aobscan(ResearchSpend,F0 89 08 48 8B 46 10) // should be unique
+aobscan(ResearchSpend,F0 89 08 48 8B 46 10)
 registersymbol(ResearchSpend)
 
 ResearchSpend+01:
   db 90 90
-
 
 [DISABLE]
 
@@ -28,8 +25,6 @@ ResearchSpend+01:
   db 89 08 48 8B 46 10
 
 unregistersymbol(ResearchSpend)
-
-
 {
 // ORIGINAL CODE - INJECTION POINT: 221053BCE53
 
